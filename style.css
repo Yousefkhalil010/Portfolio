@@ -333,19 +333,18 @@ section{
     text-decoration: underline;
 }
 .Projects .box {
-    /* existing styles for project boxes */
     position: relative;
     cursor: pointer;
-    overflow: hidden; /* Ensures images don't overflow when details are hidden */
-    transition: width 0.3s ease, height 0.3s ease; /* Add transition for smooth resizing */
+    overflow: hidden;
+    transition: width 0.3s ease, height 0.3s ease; 
   }
   
   .Projects .project-details {
-    display: block; /* Show project details by default */
+    display: block; 
   }
   
   .Projects .project-images {
-    display: none; /* Hide project images by default */
+    display: none; 
     position: absolute;
     top: 0;
     left: 0;
@@ -362,28 +361,28 @@ section{
     margin-bottom: 1rem;
     width: 100%;
     height: auto;
-    transition: transform 0.3s ease-in-out; /* Add a transition effect for smooth scaling */
+    transition: transform 0.3s ease-in-out; 
   }
   
   .Projects .box.active {
-    width: 80vw; /* Increase width when active */
-    height: 80vh; /* Increase height when active */
+    width: 80vw; 
+    height: 80vh; 
   }
   
   .Projects .box.active .project-details {
-    display: none; /* Hide project details when box is active */
+    display: none;
   }
   
   .Projects .box.active .project-images {
-    display: block; /* Show project images when box is active */
-    z-index: 2; /* Ensure images appear above other content */
-    overflow: auto; /* Enable scrolling if necessary */
+    display: block; 
+    z-index: 2;
+    overflow: auto; 
   }
   
   .Projects .box.active .project-images img {
-    transform: none; /* Remove scaling to ensure images fit within the box */
-    width: 100%; /* Ensure images take up the full width of the box */
-    height: auto; /* Maintain aspect ratio */
+    transform: none; 
+    width: 100%; 
+    height: auto; 
   }
   
   
